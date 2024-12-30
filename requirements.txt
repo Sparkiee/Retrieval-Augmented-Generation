@@ -1,0 +1,5 @@
+spacy
+numpy
+pandas
+re
+mysql-connector-python
