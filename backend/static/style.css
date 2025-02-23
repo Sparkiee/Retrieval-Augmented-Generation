@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.searchbar-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 25rem;
+}
+
+.searchbar-title {
+  margin-bottom: 10px;
+}
+
+.search-div {
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+  /* background-color: #a7d5f0; */
+  padding: 5px; /* Add padding around the textarea */
+}
+
+.search-div > textarea {
+  width: 100%; /* Make the textarea full width */
+  padding: 10px; /* Add padding inside the textarea */
+  border: none; /* Remove default border */
+  background-color: #a7d5f0; /* Set a solid background color */
+  color: #333; /* Set text color */
+  border-radius: 24px; /* Match the border radius of the parent div */
+  font-size: 1rem; /* Set a readable font size */
+  font-family: Arial, sans-serif; /* Use a clean font */
+  outline: none; /* Remove focus outline */
+  resize: none; /* Disable resizing of the textarea */
+
+  min-height: 50px; /* Minimum height */
+  max-height: 300px; /* Maximum height */
+  overflow: hidden; /* Prevent scrollbars */
+  height: auto; /* Allow height to adjust automatically */
+  padding-right: 30px;
+}
+
+.search-div > textarea:focus {
+  background-color: #89c9e0; /* Slightly darker shade on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow for focus effect */
+}
+
+.searchbar-button {
+  position: absolute;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 24px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  width: 1.2rem;
+  cursor: pointer;
+  bottom: 15px;
+  right: -25px;
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between messages */
+  width: 100%;
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 70%;
+}
+
+.bot-message {
+  align-self: flex-end;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 3rem;
+  max-width: 70%;
+  text-align: right;
+}
+

@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+spacy
+mysql-connector-python
+openai
+python-dotenv

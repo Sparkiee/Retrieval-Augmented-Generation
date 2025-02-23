@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vehicle Dealership</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+    <body>
+        <div class="searchbar-content">
+            <h1 class="searchbar-title">What vehicle are you looking for?</h1>
+            <div class="search-div">
+                <textarea class="searchbar" placeholder="Give me some information"></textarea>
+            </div>
+            <div class="chat-history"></div>
+        </div>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
